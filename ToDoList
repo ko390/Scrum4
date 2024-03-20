@@ -1,0 +1,36 @@
+-Restructurar Codigo
+ejemplo:
+src/
+├── Menu/
+│   ├── MainMenu.java
+│   ├── ClientMenu.java
+│   ├── EmployeeMenu.java
+│   ├── BandMenu.java
+│   ├── ShopMenu.java
+│   └── ZoneMenu.java
+├── Objects/
+│   ├── Member.java
+│   ├── Client.java
+│   ├── Employee.java
+│   ├── Band.java
+│   ├── ShopItem.java
+│   └── Zone.java
+└── app/
+    ├── Login/
+    │   ├── LoginManager.java
+    │   └── Login.java
+    ├── EmployeeManager/
+    │   ├── EmployeeManager.java
+    │   └── Employee.java
+    ├── ClientManager/
+    │   ├── ClientManager.java
+    │   └── Client.java
+    ├── ItemConsumption/
+    │   ├── ItemConsumptionManager.java
+    │   └── Item.java
+    ├── ZoneManager/
+    │   ├── ZoneManager.java
+    │   └── Zone.java
+    └── BandContractor/
+        ├── BandContractorManager.java
+        └── Band.java
