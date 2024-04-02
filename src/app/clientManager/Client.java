@@ -17,7 +17,6 @@ public class Client {
         this.entryType = entryType;
     }
 
-    // Getters and setters
     public int getId() {
         return id;
     }

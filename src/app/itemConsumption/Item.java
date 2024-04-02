@@ -11,7 +11,6 @@ public class Item {
         this.price = price;
     }
 
-    // Getters and setters
     public int getId() {
         return id;
     }

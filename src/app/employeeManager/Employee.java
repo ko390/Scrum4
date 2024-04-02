@@ -19,7 +19,6 @@ public class Employee {
         this.pay = pay;
     }
 
-    // Getters and setters
     public int getId() {
         return id;
     }

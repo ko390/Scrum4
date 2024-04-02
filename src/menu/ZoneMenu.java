@@ -40,11 +40,10 @@ public class ZoneMenu {
             } catch (InputMismatchException e) {
                 System.out.println("Error: Invalid input. Please enter a valid number.");
                 scanner.nextLine();
-                choice = -1; // Reset choice to force re-prompt
+                choice = -1;
             }
         } while (choice != 0);
 
-        scanner.close();
     }
 
     private void addZone() {

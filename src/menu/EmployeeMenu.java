@@ -47,7 +47,6 @@ public class EmployeeMenu {
             }
         } while (choice != 0);
 
-        scanner.close();
     }
 
     private void addEmployee() {
