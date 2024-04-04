@@ -34,4 +34,24 @@ public abstract class Member {
     public String getDni() {
         return dni;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
 }

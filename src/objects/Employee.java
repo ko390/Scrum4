@@ -17,4 +17,12 @@ public class Employee extends Member {
     public double getPay() {
         return pay;
     }
+
+    public void setJob(String job) {
+        this.job = job;
+    }
+
+    public void setPay(double pay) {
+        this.pay = pay;
+    }
 }

@@ -34,4 +34,4 @@ src/
     └── BandContractor/
         ├── BandContractorManager.java
         └── Band.java
--error handling problem: fix the problem when exiting employee menu, shop menu zone menu.
+-error handling problem: fix the problem when exiting employee menu, shop menu zone menu. X

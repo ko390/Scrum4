@@ -7,12 +7,12 @@ public class Band {
     private String genre;
     private String country;
 
-    public Band(int id, String name, boolean available, String genre, String country) {
+    public Band(int id, String name, String genre, String country, boolean available) {
         this.id = id;
         this.name = name;
-        this.available = available;
         this.genre = genre;
         this.country = country;
+        this.available = available;
     }
 
     public int getId() {
@@ -33,5 +33,13 @@ public class Band {
 
     public String getCountry() {
         return country;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+
+    public String getStyle() {
+        return genre;
     }
 }

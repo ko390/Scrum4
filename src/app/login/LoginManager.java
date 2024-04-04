@@ -9,7 +9,6 @@ public class LoginManager {
 
     public LoginManager() {
         this.logins = new ArrayList<>();
-        // Initialize with some default logins
         logins.add(new Login("admin", "admin123"));
         logins.add(new Login("user", "user123"));
     }
