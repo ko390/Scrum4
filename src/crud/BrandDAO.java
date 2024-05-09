@@ -7,6 +7,4 @@ public interface BrandDAO {
     public void viewBands(BrandCRUD brandCRUD) throws SQLException;
     public void hireBands(BrandCRUD brandCRUD) throws SQLException;
 
-
-
 }
