@@ -1,8 +1,12 @@
 package menu;
 
-import crud.BrandCRUD;
+import crud.BandCRUD;
+import crud.BandDAO;
+import crud.BandDaoImplements;
+import crud.Conexion;
 import entities.Band;
 
+import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -16,24 +20,24 @@ public class BandMenu {
         int choice;
 
         do {
-            System.out.println("Band Menu:");
+            System.out.println("\nBand Menu:");
             System.out.println("1. Generate Bands");
             System.out.println("2. View Bands");
             System.out.println("3. Hire Band");
             System.out.println("0. Back to Main Menu");
 
-            System.out.print("Enter your choice: ");
+            System.out.print("Enter your choice: \n");
             try {
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
-                        BrandCRUD.generateBands();
+                        BandCRUD.generateBands();
                         break;
                     case 2:
-                        BrandCRUD.viewBands();
+                        BandCRUD.viewBands();
                         break;
                     case 3:
-                        BrandCRUD.hireBand();
+                        BandCRUD.hireBand();
                         break;
                     case 0:
                         System.out.println("Returning to Main Menu...");
@@ -47,6 +51,13 @@ public class BandMenu {
                 choice = -1;
             }
         } while (choice != 0);
+    }
+
+    public static void main(String[] args) {
+
+        BandMenu bandMenu = new BandMenu();
+
+        bandMenu.displayBandMenu();
     }
 
 }

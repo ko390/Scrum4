@@ -15,31 +15,47 @@ public class Band {
         this.available = available;
     }
 
+    public Band() {
+
+    }
+
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public boolean isAvailable() {
         return available;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public String getCountry() {
-        return country;
     }
 
     public void setAvailable(boolean available) {
         this.available = available;
     }
 
-    public String getStyle() {
+    public String getGenre() {
         return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 }
