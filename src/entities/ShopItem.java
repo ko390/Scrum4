@@ -15,6 +15,9 @@ public class ShopItem {
         this.totalPrice = 0.0;
     }
 
+    public ShopItem() {
+    }
+
     public int getId() {
         return id;
     }
