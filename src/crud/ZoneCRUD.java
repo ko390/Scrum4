@@ -16,14 +16,14 @@ public class ZoneCRUD {
             return;
         }
 
-        scanner.nextLine();
         System.out.println("Adding a new zone:");
         System.out.print("Enter zone name: ");
         String name = scanner.nextLine();
-        System.out.print("Enter zone capacity: ");
         int capacity;
         try {
+            System.out.print("Enter zone capacity: ");
             capacity = scanner.nextInt();
+            scanner.nextLine();
         } catch (InputMismatchException e) {
             System.out.println("Error: Invalid input. Please enter a valid capacity.");
             scanner.nextLine();
