@@ -4,14 +4,32 @@ public class Zone {
     private int id;
     private String name;
     private int capacity;
-    private boolean vip;
+    private int vip;
+    
 
-    public Zone(int id, String name, int capacity, boolean vip) {
+    public Zone(int id, String name, int capacity, int vip) {
         this.id = id;
         this.name = name;
         this.capacity = capacity;
         this.vip = vip;
     }
+
+    public int getVip() {
+        return vip;
+    }
+
+    public void setVip(int vip) {
+        this.vip = vip;
+    }
+
+    public Zone() {
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+
 
     public int getId() {
         return id;
@@ -33,7 +51,4 @@ public class Zone {
         this.capacity = capacity;
     }
 
-    public boolean isVip() {
-        return vip;
-    }
 }

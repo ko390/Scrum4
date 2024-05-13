@@ -25,6 +25,7 @@ public class BandDaoImplements implements BandDAO {
         rs.next();
         int n = rs.getInt(1);
         return n;
+
     }
 
     @Override

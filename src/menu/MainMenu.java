@@ -9,7 +9,7 @@ public class MainMenu {
         int choice;
 
         do {
-            System.out.println("Main Menu:");
+            System.out.println("\nMain Menu:");
             System.out.println("1. Client Menu");
             System.out.println("2. Employee Menu");
             System.out.println("3. Band Menu");

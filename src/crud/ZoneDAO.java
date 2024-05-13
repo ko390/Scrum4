@@ -3,10 +3,12 @@ package crud;
 import entities.Zone;
 
 import java.sql.SQLException;
+import java.util.List;
 
 public interface ZoneDAO {
-    public void addZone(ZoneCRUD zoneCRUD) throws SQLException;
-    public void viewZone(ZoneCRUD zoneCRUD) throws SQLException;
-    public void removeZone(ZoneCRUD zoneCRUD) throws SQLException;
-    public void updateZone(ZoneCRUD zoneCRUD) throws SQLException;
+    public int addZone(Zone zone) throws SQLException;
+    public Zone viewZone(int id) throws SQLException;
+    public List<Zone> viewZones() throws SQLException;
+    public void removeZone(int id) throws SQLException;
+    public void updateZone(Zone zone) throws SQLException;
 }
