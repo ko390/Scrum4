@@ -30,7 +30,7 @@ public class ZoneCRUD {
             return;
         }
 
-        Zone zone = new Zone(zoneIdCounter++, name, capacity, false);
+        Zone zone = new Zone(zoneIdCounter++, name, capacity, 1);
         ZoneMenu.zones.add(zone);
 
         System.out.println("Zone added successfully.");
