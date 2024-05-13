@@ -1,4 +1,4 @@
-package objects;
+package entities;
 
 public abstract class Member {
     private int id;

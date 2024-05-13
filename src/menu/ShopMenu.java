@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import crud.ShopCRUD;
-import objects.ShopItem;
+import entities.ShopItem;
 
 public class ShopMenu {
     public static List<ShopItem> shopItems = new ArrayList<>();

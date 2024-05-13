@@ -1,7 +1,7 @@
 package crud;
 
 import menu.BandMenu;
-import objects.Band;
+import entities.Band;
 
 import java.util.Random;
 import java.util.Scanner;

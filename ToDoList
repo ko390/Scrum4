@@ -8,7 +8,7 @@ src/
 │   ├── BandMenu.java
 │   ├── ShopMenu.java
 │   └── ZoneMenu.java
-├── objects/
+├── entities/
 │   ├── Member.java
 │   ├── Client.java
 │   ├── Employee.java

@@ -1,4 +1,4 @@
-package objects;
+package entities;
 
 public class Client extends Member {
     private String entryType;

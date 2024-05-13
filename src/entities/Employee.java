@@ -1,4 +1,4 @@
-package objects;
+package entities;
 
 public class Employee extends Member {
     private String job;

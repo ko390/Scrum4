@@ -1,7 +1,7 @@
 package menu;
 
 import crud.ClientCRUD;
-import objects.Client;
+import entities.Client;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;

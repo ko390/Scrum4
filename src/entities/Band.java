@@ -1,4 +1,4 @@
-package objects;
+package entities;
 
 public class Band {
     private int id;

@@ -1,7 +1,7 @@
 package menu;
 
 import crud.BrandCRUD;
-import objects.Band;
+import entities.Band;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;

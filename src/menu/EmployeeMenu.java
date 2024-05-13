@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import crud.EmployeeCRUD;
-import objects.Employee;
+import entities.Employee;
 
 public class EmployeeMenu {
     public static List<Employee> employees = new ArrayList<>();

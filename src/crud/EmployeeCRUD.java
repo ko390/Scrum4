@@ -1,7 +1,7 @@
 package crud;
 
 import menu.EmployeeMenu;
-import objects.Employee;
+import entities.Employee;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

@@ -1,7 +1,7 @@
 package crud;
 
 import menu.ShopMenu;
-import objects.ShopItem;
+import entities.ShopItem;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
