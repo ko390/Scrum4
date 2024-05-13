@@ -19,6 +19,9 @@ public class Band {
 
     }
 
+    public Band(int id, String name, String genre, String country, String available) {
+    }
+
     public int getId() {
         return id;
     }

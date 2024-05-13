@@ -1,36 +1,36 @@
 package crud;
 
+import entities.Client;
 import menu.BandMenu;
 import entities.Band;
+import menu.ClientMenu;
 
-import java.util.Random;
+import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class BandCRUD {
     private static int bandIdCounter = 1;
     private static Scanner scanner = new Scanner(System.in);
-    private static Random random = new Random();
-
-    //generateBands (show bands)
 
     public static void generateBands() {
-        String[] names = {"BandA", "BandB", "BandC", "BandD", "BandE"};
-        String[] styles = {"Rock", "Pop", "Jazz", "Metal", "Folk"};
-        String[] countries = {"USA", "UK", "France", "Germany", "Japan"};
+        System.out.println("Adding a new band:");
+        System.out.print("Enter band name: ");
+        String name = scanner.nextLine();
 
-        BandMenu.bands.clear();
+        System.out.print("Enter band genre: ");
+        String genre = scanner.nextLine();
 
-        for (int i = 0; i < names.length; i++) {
-            String name = names[i];
-            String style = styles[i];
-            String country = countries[i];
-            boolean available = random.nextBoolean();
+        System.out.print("Enter client country: ");
+        String country = scanner.nextLine();
 
-            Band band = new Band(bandIdCounter++, name, style, country, available);
-            BandMenu.bands.add(band);
-        }
+        System.out.print("Estan disponibles? ");
+        String available = scanner.nextLine();
 
-        System.out.println("Bands generated successfully.");
+        Band band = new Band(bandIdCounter++, name, genre, country, available);
+        BandMenu.bands.add(band);
+
+        System.out.println("Band added successfully.");
     }
 
     public static void viewBands() {
@@ -42,7 +42,6 @@ public class BandCRUD {
     }
 
     public static void hireBand() {
-
         System.out.println("Available bands for hire:");
         System.out.println("ID | Name | Style | Country");
         for (Band band : BandMenu.bands) {

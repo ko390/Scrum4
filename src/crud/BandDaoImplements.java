@@ -12,7 +12,7 @@ public class BandDaoImplements implements BandDAO {
 
     @Override
     public int generateBands(Band band) throws SQLException {
-        String query = "INSERT INTRO BAND (name, available, genre, country) VALUES (?, ?, ?, ?)";
+        String query = "INSERT INTO Band (name, available, genre, country) VALUES (?, ?, ?, ?)";
         PreparedStatement ps = con.prepareStatement(query);
         ps.setString(1, band.getName());
         ps.setBoolean(2, band.isAvailable());
@@ -46,11 +46,11 @@ public class BandDaoImplements implements BandDAO {
             band.setCountry(rs.getString("country"));
 
         }
-        if (check == true) {
+        if (check) {
             return band;
-        } else
+        } else {
             return null;
-
+        }
     }
 
     @Override
@@ -72,11 +72,10 @@ public class BandDaoImplements implements BandDAO {
             band.setCountry(rs.getString("country"));
 
         }
-        if (check == true) {
+        if (check) {
             return band;
-        } else
+        } else {
             return null;
-
-
+        }
     }
 }
