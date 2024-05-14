@@ -10,14 +10,15 @@ public class ShopCRUD {
     private static int itemIdCounter = 1;
     private static Scanner scanner = new Scanner(System.in);
     public static void addItem() {
-        scanner.nextLine();
         System.out.println("Adding a new item:");
         System.out.print("Enter item name: ");
         String name = scanner.nextLine();
-        System.out.print("Enter item price: ");
+
         double price;
         try {
+            System.out.print("Enter item price: ");
             price = scanner.nextDouble();
+            scanner.nextLine();
         } catch (InputMismatchException e) {
             System.out.println("Error: Invalid input. Please enter a valid price.");
             scanner.nextLine();

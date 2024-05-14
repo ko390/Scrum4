@@ -5,6 +5,7 @@ public class Zone {
     private String name;
     private int capacity;
     private int vip;
+    
 
     public Zone(int id, String name, int capacity, int vip) {
         this.id = id;

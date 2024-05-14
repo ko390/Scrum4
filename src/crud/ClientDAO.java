@@ -1,10 +1,12 @@
 package crud;
 
+import entities.Client;
+
 import java.sql.SQLException;
 
 public interface ClientDAO {
-    public void addClient(ClientCRUD clientCRUD) throws SQLException;
-    public void viewClients(ClientCRUD clientCRUD) throws SQLException;
-    public void removeClient(ClientCRUD clientCRUD) throws SQLException;
-    public void updateClient(ClientCRUD clientCRUD) throws SQLException;
+    public void addClient(Client client) throws SQLException;
+    public void viewClients(Client client) throws SQLException;
+    public void removeClient(Client client) throws SQLException;
+    public void updateClient(Client client) throws SQLException;
 }

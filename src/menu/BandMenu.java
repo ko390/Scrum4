@@ -1,12 +1,9 @@
 package menu;
 
 import crud.BandCRUD;
-import crud.BandDAO;
-import crud.BandDaoImplements;
-import crud.Conexion;
+
 import entities.Band;
 
-import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
