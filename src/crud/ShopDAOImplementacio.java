@@ -22,8 +22,12 @@ public class ShopDAOImplementacio implements ShopDAO{
         // Obtenim claus autogenerades
         ResultSet rs = ps.getGeneratedKeys();
         rs.next(); // Sabem que només n'hi ha una
+
         int n = rs.getInt(1);
+        ps.close();
+        rs.close();
         return n;
+
     }
 
     @Override
@@ -44,7 +48,8 @@ public class ShopDAOImplementacio implements ShopDAO{
             shopitem.setNumberSold(rs.getInt("numberSold"));
             shopitem.setTotalPrice(rs.getInt("totalPrice"));
         }
-
+        ps.close();
+        rs.close();
         if (check) {
             return shopitem;
         }
@@ -68,6 +73,8 @@ public class ShopDAOImplementacio implements ShopDAO{
             shopItem.setTotalPrice(rs.getDouble("totalPrice"));
             ls.add(shopItem);
         }
+        ps.close();
+        rs.close();
         return ls;
     }
 
@@ -77,6 +84,7 @@ public class ShopDAOImplementacio implements ShopDAO{
         PreparedStatement ps = con.prepareStatement(query);
         ps.setInt(1, id);
         ps.executeUpdate();
+        ps.close();
     }
 
     @Override
@@ -90,5 +98,6 @@ public class ShopDAOImplementacio implements ShopDAO{
         ps.setDouble(5, shopitem.getTotalPrice());
         ps.setInt(6, shopitem.getId());
         ps.executeUpdate();
+        ps.close();
     }
 }
